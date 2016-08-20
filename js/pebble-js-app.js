@@ -210,7 +210,7 @@ function getVerseText(token, book, chapter, completion) {
     }
 
 	var xhr = new XMLHttpRequest();
-	var url = "http://google.com/api/?passage="+encodeURI(book + ' ' + chapter)+"&type=json";
+	var url = "http://labs.bible.org/api/?passage="+encodeURI(book + ' ' + chapter)+"&type=json";
 	logDebug("Fetching verse data from: " + url);
 	xhr.open('GET', url);
 	xhr.timeout = options.http.timeout;
